@@ -1,11 +1,11 @@
 const input = document.querySelector("#validation-input");
-input.addEventListener("click", () => {
+input.addEventListener("blur", () => {
   console.log(input.value.length);
   console.dir(input.dataset.length);
   const inputValue = input.value.length;
   const dataValue = input.dataset.length;
 
-  if (inputValue+1  === +dataValue) {
+  if (inputValue  === Number(dataValue)) {
     input.classList.add("valid");
     input.classList.remove("invalid");
     console.dir(input);

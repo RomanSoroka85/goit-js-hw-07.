@@ -5,10 +5,8 @@ const refs = {
 };
 let conterValue = refs.span.textContent;
 refs.btnDecr.addEventListener("click", () => {
-  if (conterValue > 0) {
-    conterValue--;
-    refs.span.textContent = conterValue;
-  }
+  conterValue--;
+  refs.span.textContent = conterValue;
 });
 refs.btnInc.addEventListener("click", () => {
   conterValue++;
